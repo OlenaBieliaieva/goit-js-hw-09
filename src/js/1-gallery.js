@@ -76,8 +76,7 @@ function galleryMarkup() {
             <a class="gallery-link" href="${original}">
                 <img class="gallery-image" src="${preview}"
                     alt="${description}" 
-                    width = "360" 
-                    height = "200"/>
+                    />
             </a>
         </li>`;
     })
@@ -87,10 +86,6 @@ function galleryMarkup() {
 galleryMarkup();
 
 const lightbox = new SimpleLightbox('.gallery a', {
-  captions: true,
-  captionSelector: 'img',
-  captionType: 'attr',
   captionsData: 'alt',
-  captionPosition: 'bottom',
   captionDelay: 250,
 });
